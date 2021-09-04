@@ -1,5 +1,4 @@
 module.exports = {
-  mode: "jit",
   purge: {
     enabled: process.env.NODE_ENV === "production",
     content: ["src/**/*.js", "src/**/*.jsx", "public/**/*.html"],
@@ -11,5 +10,5 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
-}
+  plugins: [require("@tailwindcss/line-clamp")],
+};

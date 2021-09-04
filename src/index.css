@@ -1,3 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+div::-webkit-scrollbar {
+  display: none;
+}
+div {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@layer base {
+  .nav__list {
+    @apply flex items-center justify-between space-x-10;
+  }
+  .nav__list > li {
+    @apply cursor-pointer;
+  }
+}
